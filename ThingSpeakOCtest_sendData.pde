@@ -6,24 +6,22 @@ String myString;
 void setup()
 {
   background(#1C6EC4);
-  size(600,600);
+  size(600, 600);
 }
 void draw()
 {
-  
-  //from CIF IoT
-  //https://api.thingspeak.com/update?api_key=NIGHWHCI0ACGAZGO&field1=100&field2=100
-  
-  myString="http://api.thingspeak.com/update?api_key="+APIKey+"&field1="+xCord+"&field2="+yCord;
-  
-  if(keyPressed==true)
+
+
+
+  myString="http://api.thingspeak.com/update?api_key="+APIKey+"&field1="+xCord;
+
+  if (keyPressed==true)
   {
-    ellipse(mouseX, mouseY,radius, radius);
+    rect(20, 200, mouseX, 200);
     xCord=mouseX;
-    yCord=mouseY;
     loadStrings(myString);
-  radius=radius+3;
-  delay(1000);
+    delay(1000);
+    println(xCord);
   }
- 
 }
+
