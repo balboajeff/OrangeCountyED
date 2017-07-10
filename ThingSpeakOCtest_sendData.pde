@@ -22,6 +22,8 @@ void draw()
     loadStrings(myString);
     delay(1000);
     println(xCord);
+    textSize(50);
+    text(xCord, 10, 550);
   }
 }
 
