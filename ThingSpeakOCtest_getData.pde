@@ -26,7 +26,7 @@ void setup() {
 
 void draw() {
   background(50);
-  //example feed= https://api.thingspeak.com/channels/277951/fields/2/last.txt
+  //example feed= https://api.thingspeak.com/channels/295365/fields/1/last.txt
  String lines[]= loadStrings("https://api.thingspeak.com/channels/"+APIkey+"/fields/2/last.txt");
  data=lines;
 
